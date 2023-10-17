@@ -168,10 +168,85 @@ background-color: white;
 /* collection-container style ends here  */
 
 /* featured-container style starts here  */
+
+.featured-container{
+    width: 80%;
+    margin: 100px auto 100px;
+    display: flex;
+    gap: 95px;
+}
+.featured-image{
+    width: 35%
+}
+.featured-image img{
+    width: 100%;
+}
+.featured-content{
+    width: calc(70% - 95px);
+    display: flex;
+    flex-direction: column;
+
+}
+.featured-title{
+    margin: 25px 0px 16px 0px ;
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+} 
+.featured-description{
+    max-width: 500px;
+    margin-bottom: 16px;
+    color: #6C6C6C;
+font-size: 16px;
+font-weight: 700;
+line-height: 28px; /* 175% */
+} 
+.join-btn{
+    max-width: 155px;
+padding: 10px 24px;
+margin-bottom: 16px;
+color: #FFF;
+font-size: 16px;
+font-weight: 700;
+background: #E02C6D;
+border: 0px;
+}
 /* featured-container style ends here  */
 
 /* footer-container style starts here  */
+footer{
+    
+    background: #0A0826;
+    padding: 50px;
+}
+.footer-container{
+    max-width: 270px;
+    margin: 0px auto;
+    text-align: center;
+} 
+.footer-container h3{
+    padding: 2px;
+
+    margin: 0px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-container p{
+    margin-top: 3px;
+    color: #D9DBE1;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+.spcian-icons span{
+    padding-right: 15px;
+}
 /* footer-container style ends here  */
+
+
+
+
 
 
 @media screen and (max-width:576px) {
@@ -236,8 +311,50 @@ font-weight: 500;
 .card-container{
     margin: 0 auto;
     padding: 15px;
-    display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 30px;
 }
+.see-more{
+    top: 10px;
+    left: 250px;
+}
+
+/* featured-container style starts here  */
+
+.featured-container{
+    width: 88%;
+    flex-direction: column-reverse;
+    margin: 50px auto 50px;
+    gap: 25px;
+    text-align: center;
+
+}
+.featured-image{
+    width: 100%;
+}
+.featured-content{
+    width: 100%;
+    align-items: center;
+
+}
+.featured-title{
+    margin: 0px 0px 16px 0px ;
+    font-size: 24px;
+} 
+/* footer-container style starts here  */
+.footer-container{
+    max-width: 225px;
+}
+.footer-container h3{
+    font-size: 16px;
+
+}
+.footer-container p{
+    font-size: 12px;
+}
+.spcian-icons span{
+    padding-right: 0px;
+}
+
+
 }
